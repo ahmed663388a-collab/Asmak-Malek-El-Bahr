@@ -1,0 +1,76 @@
+body {
+  margin:0;
+  font-family:'Cairo', sans-serif;
+  background-color:#fefefe; /* خلفية فاتحة */
+  color:#333; /* نص داكن */
+}
+
+/* هيدر */
+header {
+  text-align:center;
+  padding:50px 20px;
+  background:linear-gradient(90deg,#ff7f50,#ffb347); /* ألوان فخمة */
+}
+
+header h1 {
+  font-family:'Playfair Display', serif;
+  font-size:50px;
+  color:#fff;
+  margin-bottom:20px;
+}
+
+.contact-buttons .btn {
+  display:inline-block;
+  margin:10px;
+  padding:15px 30px;
+  border-radius:12px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:bold;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.btn.whatsapp { background-color:#25D366; }
+.btn.call { background-color:#FF4500; }
+
+.btn:hover { transform:scale(1.05); box-shadow:0 5px 15px rgba(0,0,0,0.3); }
+
+/* المنيو */
+#menu { padding:50px 20px; text-align:center; }
+#menu h2 { font-family:'Playfair Display', serif; font-size:36px; margin-bottom:30px; color:#ff7f50; }
+.menu-items { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
+.menu-items .card {
+  background:#fff;
+  padding:15px 20px;
+  border-radius:12px;
+  width:220px;
+  display:flex;
+  justify-content:space-between;
+  font-size:18px;
+  color:#333;
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+.menu-items .card:hover { transform:scale(1.03); box-shadow:0 5px 15px rgba(255,127,80,0.4); }
+
+/* الجاليري */
+#gallery { padding:50px 20px; text-align:center; }
+#gallery h2 { font-family:'Playfair Display', serif; font-size:36px; margin-bottom:30px; color:#ff7f50; }
+
+.slider { position:relative; max-width:800px; margin:0 auto; overflow:hidden; border-radius:15px; }
+.slides { display:flex; transition:transform 0.5s ease-in-out; }
+.slides img { width:100%; flex-shrink:0; border-radius:12px; box-shadow:0 5px 15px rgba(255,127,80,0.3); }
+
+/* أزرار السلايدر */
+.prev,.next { position:absolute; top:50%; transform:translateY(-50%); background-color:#ff7f50; border:none; padding:10px 15px; font-size:24px; border-radius:50%; cursor:pointer; color:#fff; z-index:10; transition:0.3s; }
+.prev:hover,.next:hover { background-color:#ff4500; }
+
+/* الفوتر */
+footer { padding:30px 20px; text-align:center; background-color:#fff; font-size:18px; color:#333; }
+
+/* Responsive */
+@media (max-width:768px){
+  header h1{ font-size:36px; }
+  #menu h2,#gallery h2{ font-size:28px; }
+  .menu-items .card{ width:90%; font-size:18px; }
+}
